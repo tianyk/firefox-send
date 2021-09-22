@@ -10,5 +10,7 @@ services:
       - REDIS_HOST=redis
       - NODE_ENV=production
       - FILE_DIR=/app/fs
+      - ANON_MAX_DOWNLOADS=100
+      - ANON_MAX_EXPIRE_SECONDS=604800
   redis:
     image: redis:alpine
