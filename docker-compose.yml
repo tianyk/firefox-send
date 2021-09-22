@@ -9,6 +9,6 @@ services:
     environment:
       - REDIS_HOST=redis
       - NODE_ENV=production
-      - FILE_DIR=/data/send
+      - FILE_DIR=/app/fs
   redis:
     image: redis:alpine
